@@ -12,8 +12,8 @@ public class ObjectManager : MonoBehaviour
     void Start()
     {
         spawnedObjects = new GameObject[numberOfObjects];
-
-        for (int i = 0 i < numberOfObjects; i++);
+        ;
+        for (int i = 0;  i < numberOfObjects; i++)
         {
             GameObject obj = Instantiate(objectToSpawn, new Vector3(i * 2, 0, 0), Quaternion.identity);
             spawnedObjects[i] = obj; 
