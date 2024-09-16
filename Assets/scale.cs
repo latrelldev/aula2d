@@ -23,17 +23,17 @@ public class scale : MonoBehaviour
 
         if (Input.GetMouseButtonDown (1))
         {
-
-
-            edewdwdfw  
             hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
             if(hit.transform != null)
             {
-                Debug.Log("player diminuindo");
-                transf = hit.transform;
-                targetScale = minSscale;
-                vScale = new Vector2(targetScale, targetScale);
+                if (hit.transform == transform)
+                {
+                    Debug.Log("player diminuindo");
+                    transf = hit.transform;
+                    targetScale = minSscale;
+                    vScale = new Vector2(targetScale, targetScale);
+                }
             }
             else
             {
@@ -44,12 +44,16 @@ public class scale : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition),Vector2.zero);
-            if (hit.transform == transform)
+            if (hit.transform != null)
             {
-                Debug.Log("player aumentando");
-                transf = hit.transform;
-                targetScale = maxScale;
-                vScale = new Vector2(targetScale, targetScale);
+                if(hit.transform == transform)
+                {
+                    Debug.Log("player aumentando");
+                    transf = hit.transform;
+                    targetScale = maxScale;
+                    vScale = new Vector2(targetScale, targetScale);
+                }
+            
             }
             else
             {
