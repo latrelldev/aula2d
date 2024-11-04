@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 192666217}
   - component: {fileID: 192666220}
   - component: {fileID: 192666221}
+  - component: {fileID: 192666222}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -192,7 +193,7 @@ Transform:
   m_GameObject: {fileID: 192666216}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.711, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -264,6 +265,22 @@ CircleCollider2D:
   m_Offset: {x: 0.0059239566, y: 0}
   serializedVersion: 2
   m_Radius: 0.25711778
+--- !u!114 &192666222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192666216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e8b5a8187d9e9b4e85678890fb85bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 4800843056450490326, guid: 1b5d7ff56fbae3b4e8803b1f74e6a545, type: 3}
+  _bulletSpeed: 8
+  _gun: {fileID: 1068776823}
+  _timeshot: 0.5
 --- !u!1001 &274000134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -581,7 +598,7 @@ Transform:
   m_GameObject: {fileID: 459866912}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.711, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -689,7 +706,7 @@ GameObject:
   - component: {fileID: 1068776823}
   - component: {fileID: 1068776824}
   m_Layer: 0
-  m_Name: Triangle
+  m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -748,8 +765,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1514718023
-  m_SortingLayer: 4
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 0.013207495, b: 0.013207495, a: 1}
@@ -884,7 +901,7 @@ Transform:
   m_GameObject: {fileID: 1448978493}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.711, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
