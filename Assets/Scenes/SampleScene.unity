@@ -157,6 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _rotationSpeed: 720
+  _screenBorder: 30
 --- !u!50 &192666218
 Rigidbody2D:
   serializedVersion: 4
