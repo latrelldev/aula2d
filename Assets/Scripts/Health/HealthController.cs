@@ -19,7 +19,7 @@ public class HealthController : MonoBehaviour
         }
     }
 
-    public bool IsInvencible { get;;set; }
+    public bool IsInvencible { get;set; }
 
     public UnityEvent OnDied;
 
