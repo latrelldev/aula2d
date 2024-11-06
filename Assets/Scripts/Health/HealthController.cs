@@ -22,6 +22,7 @@ public class HealthController : MonoBehaviour
     public bool IsInvencible { get;set; }
 
     public UnityEvent OnDied;
+    public UnityEvent OnDamage;
 
     public void TakeDamage(float damageAmount)
     {
@@ -44,6 +45,10 @@ public class HealthController : MonoBehaviour
         if(_currentHealth == 0)
         {
             OnDied.Invoke();
+        }
+        else
+        {
+            OnDamage.Invoke();  
         }
     }
 
