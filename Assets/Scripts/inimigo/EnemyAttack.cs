@@ -11,8 +11,8 @@ public class EnemyAttack : MonoBehaviour
     {
         if (collission.gameObject.GetComponent<PlayerMovement>())
         {
-            var heelthController = collission.gameObject.GetComponent<HealthController>();
-            heelthController.TakeDamage(_damageAmount);
+            var healthController = collission.gameObject.GetComponent<HealthController>();
+            healthController.TakeDamage(_damageAmount);
         }
     }
 
