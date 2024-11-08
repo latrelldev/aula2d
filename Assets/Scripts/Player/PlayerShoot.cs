@@ -58,6 +58,7 @@ public class PlayerShoot : MonoBehaviour
 
         if (isCollectable == true && Keyboard.current.spaceKey.wasPressedThisFrame)
         {
+            Debug.Log("dawdwadsssssssssssssssss");
             GameObject freezeGranade = Instantiate(_freezeGranadePrefab, _gun.position, _gun.rotation);
             Rigidbody2D rigidbody = freezeGranade.GetComponent<Rigidbody2D>();
 

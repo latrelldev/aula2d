@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FreezeCollectableBehaviour : MonoBehaviour, ICollectableBehaviour
 {
-    public bool _isCollected;
+    public  bool _isCollected = false;
 
     public void OnCollected(GameObject player)
     {

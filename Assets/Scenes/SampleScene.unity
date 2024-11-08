@@ -409,7 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 4800843056450490326, guid: 1b5d7ff56fbae3b4e8803b1f74e6a545, type: 3}
-  _freezeGranadePrefab: {fileID: 9095364868886887688, guid: d49ec9234d042f4439b6d4594d0f678f, type: 3}
+  _freezeGranadePrefab: {fileID: 6413839343289351803, guid: 0beac3a617e5b2e4b8b4aeb9fcbee3ae, type: 3}
   _bulletSpeed: 8
   _gun: {fileID: 1068776823}
   _timeshot: 0.5
