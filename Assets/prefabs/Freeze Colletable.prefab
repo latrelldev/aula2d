@@ -9,8 +9,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 736608724651455035, guid: 19646556d4f64eb4e8250059c3feafa8, type: 3}
+      propertyPath: m_Size.x
+      value: 0.19809994
+      objectReference: {fileID: 0}
+    - target: {fileID: 736608724651455035, guid: 19646556d4f64eb4e8250059c3feafa8, type: 3}
+      propertyPath: m_Size.y
+      value: 0.20578596
+      objectReference: {fileID: 0}
+    - target: {fileID: 736608724651455035, guid: 19646556d4f64eb4e8250059c3feafa8, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.006404951
+      objectReference: {fileID: 0}
+    - target: {fileID: 736608724651455035, guid: 19646556d4f64eb4e8250059c3feafa8, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.000000044703484
+      objectReference: {fileID: 0}
+    - target: {fileID: 736608724651455035, guid: 19646556d4f64eb4e8250059c3feafa8, type: 3}
       propertyPath: m_UsedByEffector
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1258762239034554901, guid: 19646556d4f64eb4e8250059c3feafa8, type: 3}
       propertyPath: m_Name

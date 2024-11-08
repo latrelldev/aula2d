@@ -32,8 +32,7 @@ public class FreezeGranade : MonoBehaviour
     {
         if (collision.GetComponent<EnemyMovement>())
         {
-            HealthController healthController = collision.GetComponent<HealthController>();
-            healthController.TakeDamage(10);
+            OnFreeze.Invoke();
             Destroy(gameObject);
         }
     }

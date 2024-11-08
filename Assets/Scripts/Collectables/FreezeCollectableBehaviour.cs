@@ -9,5 +9,6 @@ public class FreezeCollectableBehaviour : MonoBehaviour, ICollectableBehaviour
     public void OnCollected(GameObject player)
     {
         _isCollected = true;
+        Debug.Log("dawdwad");
     }
 }

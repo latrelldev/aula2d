@@ -54,13 +54,20 @@ public class PlayerShoot : MonoBehaviour
 
     private void FireFreezeGranade()
     {
-        GameObject freezeGranade = Instantiate(_bulletPrefab, _gun.position, _gun.rotation);
-        Rigidbody2D rigidbody = freezeGranade.GetComponent<Rigidbody2D>();
+        bool isCollectable = _freezeCollectableBehaviour._isCollected;
 
-        rigidbody.velocity = _bulletSpeed * transform.up;
+        if (isCollectable == true && Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            GameObject freezeGranade = Instantiate(_freezeGranadePrefab, _gun.position, _gun.rotation);
+            Rigidbody2D rigidbody = freezeGranade.GetComponent<Rigidbody2D>();
+
+            rigidbody.velocity = _bulletSpeed * transform.up;
+        }
+        else
+        {
+            return;
+        }
+
     }
-    private void OnFireFreezeGranade(InputValue inputValue)
-    {
-        _fireContinuosly = inputValue.isPressed;
-    }
+   
 }
