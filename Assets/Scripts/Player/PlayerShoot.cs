@@ -9,6 +9,9 @@ public class PlayerShoot : MonoBehaviour
     private GameObject _bulletPrefab;
 
     [SerializeField]
+    private GameObject _freezeGranadePrefab;
+
+    [SerializeField]
     private float _bulletSpeed;
 
     [SerializeField]
@@ -19,8 +22,7 @@ public class PlayerShoot : MonoBehaviour
 
     private bool _fireContinuosly;
     private float _lastFireTime;
-
-   
+    private FreezeCollectableBehaviour _freezeCollectableBehaviour;
 
     // Update is called once per frame
     void Update()
@@ -49,5 +51,16 @@ public class PlayerShoot : MonoBehaviour
     {
         _fireContinuosly = inputValue.isPressed;
     }
-    
+
+    private void FireFreezeGranade()
+    {
+        GameObject freezeGranade = Instantiate(_bulletPrefab, _gun.position, _gun.rotation);
+        Rigidbody2D rigidbody = freezeGranade.GetComponent<Rigidbody2D>();
+
+        rigidbody.velocity = _bulletSpeed * transform.up;
+    }
+    private void OnFireFreezeGranade(InputValue inputValue)
+    {
+        _fireContinuosly = inputValue.isPressed;
+    }
 }
