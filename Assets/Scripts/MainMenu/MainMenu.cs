@@ -12,6 +12,22 @@ public class MainMenu : MonoBehaviour
         _sceneController.LoadScene("Game");
     }
 
+    public void Menu()
+    {
+        _sceneController.LoadScene("Menu");
+    }
+
+    public void Historia()
+    {
+        _sceneController.LoadScene("Historia");
+    }
+
+    public void Controles()
+    {
+        _sceneController.LoadScene("Controles");
+    }
+
+
     public void Exit()
     {
         Application.Quit();

@@ -14,6 +14,6 @@ public class ScoreUI : MonoBehaviour
 
     public void UpdateScore(ScoreController scoreController)
     {
-        _scoreText.text = $"Score:{scoreController.Score}";
+        _scoreText.text = $"SCORE: {scoreController.Score}";
     }
 }
