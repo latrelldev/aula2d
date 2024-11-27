@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerShoot : MonoBehaviour
 {
     [SerializeField]
     private GameObject _bulletPrefab;
 
-    [SerializeField]
-    private GameObject _freezeGranadePrefab;
 
     [SerializeField]
     private float _bulletSpeed;
@@ -22,7 +21,6 @@ public class PlayerShoot : MonoBehaviour
 
     private bool _fireContinuosly;
     private float _lastFireTime;
-    private FreezeCollectableBehaviour _freezeCollectableBehaviour;
 
     // Update is called once per frame
     void Update()
@@ -35,9 +33,19 @@ public class PlayerShoot : MonoBehaviour
             {
                 FireBullet();
                 _lastFireTime = Time.time;
+                
             }
         }
 
+    }
+
+    public void ShootFast (ScoreController scoreController)
+    {
+        if (scoreController.Score == 10)
+        {
+            _timeshot = 0.27f;
+        }
+        
     }
 
     private void FireBullet()
@@ -50,25 +58,6 @@ public class PlayerShoot : MonoBehaviour
     private void OnFire (InputValue inputValue)
     {
         _fireContinuosly = inputValue.isPressed;
-    }
-
-    private void FireFreezeGranade()
-    {
-        bool isCollectable = _freezeCollectableBehaviour._isCollected;
-
-        if (isCollectable == true && Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            Debug.Log("dawdwadsssssssssssssssss");
-            GameObject freezeGranade = Instantiate(_freezeGranadePrefab, _gun.position, _gun.rotation);
-            Rigidbody2D rigidbody = freezeGranade.GetComponent<Rigidbody2D>();
-
-            rigidbody.velocity = _bulletSpeed * transform.up;
-        }
-        else
-        {
-            return;
-        }
-
     }
    
 }

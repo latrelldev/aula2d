@@ -27,6 +27,11 @@ public class MainMenu : MonoBehaviour
         _sceneController.LoadScene("Controles");
     }
 
+    public void NextLevel()
+    {
+        _sceneController.LoadScene("Game2");
+    }
+
     public void Restart ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

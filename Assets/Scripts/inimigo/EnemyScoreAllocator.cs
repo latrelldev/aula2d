@@ -19,4 +19,5 @@ public class EnemyScoreAllocator : MonoBehaviour
         _scoreController.AddScore(_killScore);
 
     }
+
 }
