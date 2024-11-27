@@ -40,6 +40,10 @@ PrefabInstance:
       propertyPath: _currentHealth
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 3981994218034296661, guid: 578d2dd97d86a0e4d92d43d3d25ef667, type: 3}
+      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4547473087835578359, guid: 578d2dd97d86a0e4d92d43d3d25ef667, type: 3}
       propertyPath: m_Name
       value: StrongEnemy
@@ -96,8 +100,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1456780996794925173, guid: 578d2dd97d86a0e4d92d43d3d25ef667, type: 3}
+    - {fileID: 1114034587871664353, guid: 578d2dd97d86a0e4d92d43d3d25ef667, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4547473087835578359, guid: 578d2dd97d86a0e4d92d43d3d25ef667, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6197635893820233793}
   m_SourcePrefab: {fileID: 100100000, guid: 578d2dd97d86a0e4d92d43d3d25ef667, type: 3}
+--- !u!1 &7445624213329914188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4547473087835578359, guid: 578d2dd97d86a0e4d92d43d3d25ef667, type: 3}
+  m_PrefabInstance: {fileID: 6363574642510476987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6197635893820233793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7445624213329914188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3063b7454f2ad647b5fe50320501654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerAwarenessDistance: 4

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class EnemyBullet : MonoBehaviour
 {
     private Camera _camera;
 
@@ -17,29 +17,20 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<EnemyMovement>())
+        if (collision.GetComponent<PlayerMovement>())
         {
             HealthController healthController = collision.GetComponent<HealthController>();
             healthController.TakeDamage(10);
-            Destroy(gameObject);
         }
-        else
-        {
-            if (collision.GetComponent<StrongEnemymovent>())
-            {
-                HealthController healthController = collision.GetComponent<HealthController>();
-                healthController.TakeDamage(10);
-                Destroy(gameObject);
-            }
-        }
+        
 
     }
 
     private void DestroyWhenOffScreen()
     {
-       Vector2 screenPosition = _camera.WorldToScreenPoint(transform.position);
-       
-        if(screenPosition.x < 0 || screenPosition.x > _camera.pixelWidth ||
+        Vector2 screenPosition = _camera.WorldToScreenPoint(transform.position);
+
+        if (screenPosition.x < 0 || screenPosition.x > _camera.pixelWidth ||
           screenPosition.y < 0 || screenPosition.y > _camera.pixelHeight)
         {
             Destroy(gameObject);
