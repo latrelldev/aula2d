@@ -59,6 +59,5 @@ public class StrongEnemyShoot : MonoBehaviour
     private void OnFire(InputValue inputValue)
     {
         _fireContinuosly = _playerAwarenessController.AwareOfPlayer = true;
-        Debug.Log("123123132");
     }
 }

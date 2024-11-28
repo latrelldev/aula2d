@@ -15,15 +15,14 @@ public class EnemyBullet : MonoBehaviour
     {
         DestroyWhenOffScreen();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionStay2D(Collision2D collission)
     {
-        if (collision.GetComponent<PlayerMovement>())
+        if (collission.gameObject.GetComponent<PlayerMovement>())
         {
-            HealthController healthController = collision.GetComponent<HealthController>();
+            var healthController = collission.gameObject.GetComponent<HealthController>();
             healthController.TakeDamage(10);
+            Destroy(gameObject);
         }
-        
-
     }
 
     private void DestroyWhenOffScreen()
