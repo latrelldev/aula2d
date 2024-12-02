@@ -51,5 +51,8 @@ public class PlayerShoot : MonoBehaviour
     {
         _fireContinuosly = inputValue.isPressed;
     }
-   
+   public void ClickArma()
+    {
+        _timeshot = _timeshot * 2;
+    }
 }

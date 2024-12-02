@@ -69,4 +69,9 @@ public class HealthController : MonoBehaviour
             _currentHealth = _maxHealth;
         }
     }
+
+    public void ClickVida()
+    {
+        _currentHealth = 150;
+    }
 }
