@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
 
     public void NextLevel()
     {
-        _sceneController.LoadScene("Game2");
+        _sceneController.LoadScene("Game 2");
     }
 
     public void Restart ()
