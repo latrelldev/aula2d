@@ -53,6 +53,6 @@ public class PlayerShoot : MonoBehaviour
     }
    public void ClickArma()
     {
-        _timeshot = _timeshot * 2;
+        _timeshot = 0.6f;
     }
 }
