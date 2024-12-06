@@ -23,6 +23,11 @@ public class EnemyBullet : MonoBehaviour
             healthController.TakeDamage(10);
             Destroy(gameObject);
         }
+
+        if (collission.gameObject.GetComponent<win>())
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void DestroyWhenOffScreen()
