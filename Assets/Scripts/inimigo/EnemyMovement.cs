@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -87,8 +88,15 @@ public class EnemyMovement : MonoBehaviour
         _rigidbody.SetRotation(rotation);
     }
 
-    private void SetVelocity()
+    public void SetVelocity()
     {
-            _rigidbody.velocity = transform.up * _speed; 
+            _rigidbody.velocity = transform.up * _speed;
     }
+
+    public void MoveAwayFrom()
+    {
+        gameObject.transform.Translate(new Vector3(0, -30000, 0));
+    }
+
+
 }
