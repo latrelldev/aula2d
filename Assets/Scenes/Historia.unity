@@ -180,7 +180,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 25097e71b874f3848a2a6bbb43cff754, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e622fdb31057ee46aedfe0b48fd534d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -706,13 +706,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Um turista decide passar o carnaval na cidade Olinda, ele foi sozinho
-    n\xE3o conhecia muito da cidade por\xE9m estava curtindo muito carnaval, ele
-    foi avisado que no carnaval a cidade de Olinda ao anoitecer fica perigosa por\xE9m
-    decidiu ignorar, ao anoitecer ele percebe que n\xE3o tem ningu\xE9m nas ruas,
-    e decide pegar seu expresso folia para voltar para recife, mas ele come\xE7a
-    a encontrar figuras carnavalescas no caminho, no entanto, elas j\xE1 n\xE3o est\xE3o
-    t\xE3o animadas igual antes..."
+  m_text: "Um turista decide passar o Carnaval na cidade de Olinda. Ele viajou sozinho
+    e n\xE3o conhecia muito da cidade, mas estava aproveitando intensamente a folia.
+    Apesar de ter sido alertado de que Olinda pode se tornar perigosa ao anoitecer
+    durante o Carnaval, decidiu ignorar o aviso.\nQuando a noite caiu, ele percebeu
+    que as ruas estavam desertas. Preocupado, resolveu pegar seu Expresso Folia para
+    retornar ao Recife. No caminho, come\xE7ou a cruzar com figuras carnavalescas,
+    mas algo estava estranho: elas j\xE1 n\xE3o tinham a mesma alegria vibrante de
+    antes..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -739,8 +740,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
