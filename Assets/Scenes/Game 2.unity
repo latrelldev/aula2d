@@ -1657,11 +1657,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8230276041371995719, guid: 3fde710c6aad112409a4d34785e5e81d, type: 3}
       propertyPath: m_fontSize
-      value: 72
+      value: 60.7
       objectReference: {fileID: 0}
+    - target: {fileID: 8230276041371995719, guid: 3fde710c6aad112409a4d34785e5e81d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 41f57b45d91e79d4fbc49461e9443f3c, type: 2}
+    - target: {fileID: 8230276041371995719, guid: 3fde710c6aad112409a4d34785e5e81d, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4279866615281460398, guid: 41f57b45d91e79d4fbc49461e9443f3c, type: 2}
     - target: {fileID: 8230276041371995719, guid: 3fde710c6aad112409a4d34785e5e81d, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230276041371995719, guid: 3fde710c6aad112409a4d34785e5e81d, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8473274119675186609, guid: 3fde710c6aad112409a4d34785e5e81d, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
