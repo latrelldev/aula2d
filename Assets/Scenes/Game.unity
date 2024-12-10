@@ -1309,7 +1309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _winScreen: {fileID: 1698968255}
-  _scoreToWin: 100
+  _scoreToWin: 500
   OnWin:
     m_PersistentCalls:
       m_Calls:
@@ -4370,7 +4370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.15447211, a: 0.392}
+  m_Color: {r: 0.02520132, g: 0, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

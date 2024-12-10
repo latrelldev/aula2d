@@ -2687,6 +2687,14 @@ PrefabInstance:
       value: StrongEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 8002078291723993582, guid: 18700d9b7ae869149b8720ea628571dc, type: 3}
+      propertyPath: _maxHealth
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002078291723993582, guid: 18700d9b7ae869149b8720ea628571dc, type: 3}
+      propertyPath: _currentHealth
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002078291723993582, guid: 18700d9b7ae869149b8720ea628571dc, type: 3}
       propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.size
       value: 9
       objectReference: {fileID: 0}
